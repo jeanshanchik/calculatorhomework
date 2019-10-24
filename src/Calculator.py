@@ -6,8 +6,7 @@ import math
 # defining calculator functions
 
 def addition(a, b):
-    c = a + b
-    return c
+    return a + b
 
 
 def subtraction(a, b):
@@ -32,7 +31,7 @@ def square(a, b):
 
 def squareroot(a):
     sqrt_a = math.sqrt(a)
-    return (sqrt_a)
+    return sqrt_a
 
 
 # instantiating Calculator class
@@ -44,8 +43,8 @@ class Calculator:
         pass
 
     def add(self, a, b):
-        self.result = addition(a, b)
-        return self.result
+        self.result = a + b
+        return addition(a, b)
 
     def subtract(self, a, b):
         self.result = subtraction(a, b)
