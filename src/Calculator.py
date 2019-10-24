@@ -10,8 +10,7 @@ def addition(a, b):
 
 
 def subtraction(a, b):
-    c = a - b
-    return c
+    return a - b
 
 
 def multiplication(a, b):
