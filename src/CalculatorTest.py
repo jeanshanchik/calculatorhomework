@@ -38,5 +38,6 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(calculator.takesqrroot(25), 5)
         self.assertEqual(calculator.result, 5)
 
+
 if __name__ == '__main__':
     unittest.main()
