@@ -14,18 +14,15 @@ def subtraction(a, b):
 
 
 def multiplication(a, b):
-    c = a * b
-    return c
+    return a * b
 
 
 def division(a, b):
-    c = a / b
-    return c
+    return a / b
 
 
-def square(a, b):
-    c = a ** b
-    return c
+def square(a):
+    return a**2
 
 
 def squareroot(a):
@@ -46,21 +43,21 @@ class Calculator:
         return addition(a, b)
 
     def subtract(self, a, b):
-        self.result = subtraction(a, b)
-        return self.result
+        self.result = a - b
+        return subtraction(a, b)
 
     def multiply(self, a, b):
-        self.result = multiplication(a, b)
-        return self.result
+        self.result = a * b
+        return multiplication(a, b)
 
     def divide(self, a, b):
-        self.result = division(a, b)
-        return self.result
+        self.result = a / b
+        return division(a, b)
 
-    def squaring(self, a, b):
-        self.result = square(a, b)
-        return self.result
+    def squaring(self, a):
+        self.result = a**2
+        return square(a)
 
-    def takesqrroot(self, a, b):
-        self.result = squareroot(a, b)
+    def takesqrroot(self, a):
+        self.result = squareroot(a)
         return self.result
