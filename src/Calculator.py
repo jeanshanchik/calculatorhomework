@@ -7,9 +7,16 @@ def subtraction(a, b):
     c = a - b
     return c
 
-def mutliplication(a, b):
+
+def multiplication(a, b):
     c = a * b
     return c
+
+
+def division(a, b):
+    c = a / b
+    return c
+
 
 class Calculator:
     result = 0
@@ -26,5 +33,8 @@ class Calculator:
         return self.result
 
     def multiply(self, a, b):
-        self.result = mutliplication(a, b)
+        self.result = multiplication(a, b)
         return self.result
+
+    def divide(self, a, b):
+        self.result = division(a, b)
