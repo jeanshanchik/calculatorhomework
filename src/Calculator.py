@@ -1,6 +1,8 @@
+# Importing math module for square_root
 import math
 
 
+# defining the functions to be used in Calculator Class
 def addition(a, b):
     c = a + b
     return c
@@ -30,7 +32,7 @@ def square_root(a):
     c = math.sqrt(a)
     return round(c, 7)
 
-
+# Creating class calculator with mathematical functions
 class Calculator:
     result = 0
 
